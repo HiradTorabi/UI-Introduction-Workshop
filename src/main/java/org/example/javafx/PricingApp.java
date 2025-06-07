@@ -17,7 +17,7 @@ public class PricingApp extends Application {
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 
         // icon
-        stage.getIcons().add(new Image("file:icon.jpg")); // آیکون را کنار پروژه قرار بده
+        stage.getIcons().add(new Image("file:icon.jpg"));
 
         stage.setTitle("Pricing Plans");
         stage.setScene(scene);
