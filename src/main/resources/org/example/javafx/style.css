@@ -1,18 +1,18 @@
 .root {
-    -fx-background-color: #121212;
+    -fx-background-color: linear-gradient(to bottom, #1c1c1e, #121212);
     -fx-font-family: "Segoe UI", sans-serif;
-    -fx-text-fill: #ffffff;
+    -fx-text-fill: #eeeeee;
 }
 
 
 .price-card {
-    -fx-background-color: #1e1e1e;
-    -fx-border-color: #333333;
-    -fx-border-width: 1px;
-    -fx-border-radius: 10px;
-    -fx-background-radius: 10px;
+    -fx-background-color: #2a2a2e;
+    -fx-border-color: #444;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
     -fx-padding: 15;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 3);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 12, 0, 0, 4);
     -fx-transition: all 0.2s ease-in-out;
 }
 
@@ -21,16 +21,22 @@
     -fx-scale-x: 1.1;
     -fx-scale-y: 1.1;
     -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(100,100,255,0.4), 15, 0.2, 0, 6);
 }
 
 
 .button {
-    -fx-background-color: #3f51b5;
+    -fx-background-color: #4f6bed;
     -fx-text-fill: white;
     -fx-font-weight: bold;
-    -fx-background-radius: 5;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0, 0, 2);
 }
 
 .button:hover {
-    -fx-background-color: #5c6bc0;
+    -fx-background-color: #748ffc;
+}
+
+.label {
+    -fx-text-fill: #f0f0f0;
 }
