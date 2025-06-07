@@ -6,12 +6,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class PricingController {
+public class PaymentController {
 
     @FXML
-    public void handleShopClick(ActionEvent event) {
+    private void initialize() {
+        // init if needed
+    }
+
+    @FXML
+    private void backBtnClicked(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("payment-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("pricing-view.fxml"));
             Scene scene = new Scene(loader.load());
             scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 

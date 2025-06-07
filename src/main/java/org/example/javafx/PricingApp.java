@@ -3,24 +3,28 @@ package org.example.javafx;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 public class PricingApp extends Application {
+
     @Override
-    public void start(Stage stage) throws IOException
-    {
-        FXMLLoader fxmlLoader = new FXMLLoader(PricingApp.class.getResource("pricing-view.fxml"));
+    public void start(Stage stage) throws Exception {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("pricing-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+
+        // add darck mode css
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
+
+        // icon
+        stage.getIcons().add(new Image("file:icon.jpg")); // آیکون را کنار پروژه قرار بده
+
         stage.setTitle("Pricing Plans");
         stage.setScene(scene);
-        //TODO: add icon to the stage
         stage.show();
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch();
     }
 }

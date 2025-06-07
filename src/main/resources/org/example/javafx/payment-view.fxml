@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.javafx.PaymentController"
+            prefWidth="400" prefHeight="300"
+            styleClass="root">
+
+    <VBox spacing="20" alignment="CENTER" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+          AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0">
+        <Label text="💳 Payment Page"
+               style="-fx-font-size: 24px; -fx-text-fill: white;" />
+        <Button fx:id="backBtn" text="Back"
+                styleClass="button"/>
+    </VBox>
+
+</AnchorPane>
